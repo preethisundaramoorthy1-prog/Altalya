@@ -1,0 +1,16 @@
+{
+  "courses": [
+    {
+      "title": "AI & ML",
+      "description": "Master the fundamentals and advanced concepts of Artificial Intelligence and Machine Learning. Learn data preprocessing, supervised and unsupervised learning, deep learning, and model deployment using tools like Python, TensorFlow, and Scikit-learn. Work on real-world projects such as predictive analytics, recommendation systems, and intelligent automation to build a strong industry-ready portfolio."
+    },
+    {
+      "title": "Robotics",
+      "description": "Explore the world of robotics by designing, building, and programming intelligent machines. Gain hands-on experience with sensors, actuators, microcontrollers, and embedded systems. Learn automation, control systems, and real-time problem solving through projects like line-following robots, obstacle avoidance systems, and robotic arms."
+    },
+    {
+      "title": "IoT",
+      "description": "Dive into the Internet of Things (IoT) and learn how to connect devices, collect data, and build smart systems. Work with Arduino, Raspberry Pi, and cloud platforms to create real-world applications like smart homes, environmental monitoring, and industrial automation. Understand networking, data communication, and IoT security concepts."
+    }
+  ]
+}
