@@ -1,69 +1,16 @@
-import { defineConfig } from "tinacms";
+import { defineSchema, defineConfig } from 'tinacms';
 
 export default defineConfig({
-  branch: "main",
-
+  clientId: process.env.TINACLOUD_CLIENT_ID,
+  token: process.env.TINACLOUD_WRITE_TOKEN,
+  branch: process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF || 'main',
   build: {
-    outputFolder: "admin",
-    publicFolder: "public",
+    outputFolder: 'admin',
+    publicFolder: 'public',
   },
-
-  media: {
-    tina: {
-      mediaRoot: "",
-      publicFolder: "public",
-    },
-  },
-
-  schema: {
+  schema: defineSchema({
     collections: [
-      {
-        name: "hero",
-        label: "Hero",
-        path: "content",
-        format: "json",
-        match: {
-          include: "hero",
-        },
-        fields: [
-          { type: "string", name: "title", label: "Title" },
-          { type: "string", name: "description", label: "Description" },
-        ],
-      },
-      {
-        name: "about",
-        label: "About",
-        path: "content",
-        format: "json",
-        match: {
-          include: "about",
-        },
-        fields: [
-          { type: "string", name: "title", label: "Title" },
-          { type: "string", name: "description", label: "Description" },
-        ],
-      },
-      {
-        name: "courses",
-        label: "Courses",
-        path: "content",
-        format: "json",
-        match: {
-          include: "courses",
-        },
-        fields: [
-          {
-            type: "object",
-            list: true,
-            name: "courses",
-            label: "Courses",
-            fields: [
-              { type: "string", name: "title", label: "Title" },
-              { type: "string", name: "description", label: "Description" },
-            ],
-          },
-        ],
-      },
+      // your collections here
     ],
-  },
+  }),
 });

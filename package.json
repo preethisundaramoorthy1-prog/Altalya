@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^5.15.9",
     "@tinacms/cli": "^2.1.11",
     "@tinacms/datalayer": "^2.0.12",
     "@tinacms/git-client": "^0.43.0",
